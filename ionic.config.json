@@ -1,0 +1,7 @@
+{
+  "name": "OcreWeb",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
