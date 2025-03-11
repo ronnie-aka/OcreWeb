@@ -19,18 +19,8 @@ const routes: Routes = [
         path: 'ponentes',
         loadChildren: () => import('../../pages/ponentes/ponentes.module').then(m => m.PonentesPageModule)
       },
-      {
-        path: '',
-        redirectTo: '/tabs/tab1',
-        pathMatch: 'full'
-      }
     ]
   },
-  {
-    path: '',
-    redirectTo: '/tabs/tab1',
-    pathMatch: 'full'
-  }
 ];
 
 @NgModule({

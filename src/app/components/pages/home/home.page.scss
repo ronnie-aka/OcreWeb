@@ -1,0 +1,71 @@
+.logo-container {
+  position: relative;
+  display: inline-block;
+}
+
+.main-logo {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.social-logos {
+  position: absolute;
+  bottom: 7%;
+  left: 40%;
+  display: flex;
+  gap: 10px;
+}
+
+.social-logo {
+  width: 5%; /* Tamaño de los logos */
+  height: auto;
+  opacity: 0.8;
+  display: block;
+}
+
+.social-logo:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+// CSS tabla
+ion-row {
+  align-items: stretch; /* Hace que todas las columnas dentro de una fila tengan la misma altura */
+}
+
+ion-col {
+  display: flex; /* Hace que las columnas sean flexibles */
+  flex: 1; /* Asegura que todas las columnas tengan el mismo tamaño */
+}
+
+ion-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Asegura que la tarjeta ocupe toda la altura de la columna */
+}
+
+ion-card {
+  margin: 10px; /* Espacio entre las tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+ion-card-content {
+  flex-grow: 1; /* Asegura que el contenido ocupe el espacio disponible */
+  display: flex;
+  flex-direction: column;
+}
+
+ion-button {
+  margin-top: auto; /* Empuja el botón hacia el final */
+}
+
+//iframe
+
+iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+}

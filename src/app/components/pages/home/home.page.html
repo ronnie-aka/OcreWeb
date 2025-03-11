@@ -1,13 +1,178 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>home</ion-title>
+    <ion-title size="large">
+      <div class="logo-container">
+        <img src="assets/logo/logo.png" alt="Logo" class="main-logo" />
+        <div class="social-logos">
+          <!-- Logo de X (Twitter) -->
+          <a href="https://x.com/FEpisteme" target="_blank" class="social-logo">
+            <img src="assets/icon/x.png" alt="X" />
+          </a>
+
+          <!-- Logo de Facebook -->
+          <a
+            href="https://www.facebook.com/fundacioepisteme"
+            target="_blank"
+            class="social-logo"
+          >
+            <img src="assets/icon/facebook.png" alt="Facebook" />
+          </a>
+
+          <!-- Logo de YouTube -->
+          <a
+            href="https://www.youtube.com/@associacioocre4691"
+            target="_blank"
+            class="social-logo"
+          >
+            <img src="assets/icon/youtube.png" alt="YouTube" />
+          </a>
+        </div>
+      </div>
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">home</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <!-- Primera fila -->
+    <ion-row>
+      <!-- Columna 1 -->
+      <ion-col size="12" size-md="6" size-lg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Sobre el congreso</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>
+              Presentamos el
+              <strong>
+                IV Congreso de Expertos Docentes para un Análisis Crítico de la
+                Realidad Educativa </strong
+              >, edición que se celebrará en Sevilla, el 25 y 26 de octubre de
+              2025.
+            </p>
+            <p>
+              Este encuentro, de alcance nacional, se tratarán los dos temas
+              principales:
+              <strong>
+                ¿Cuáles son los retos de la escuela del siglo XXI? La
+                recuperación de la educación como ascensor social.
+              </strong>
+            </p>
+            <ion-button
+              expand="block"
+              style="--background: #f2c84b; --color: #000000"
+            >
+              Más información
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Columna 2 -->
+      <ion-col size="12" size-md="6" size-lg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Programación</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <img src="assets/images/Octubre.png" alt="Octubre" />
+            <ion-button
+              expand="block"
+              style="--background: #f2c84b; --color: #000000"
+            >
+              Consulta toda la programación
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Columna 3 -->
+      <ion-col size="12" size-md="6" size-lg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Ponentes</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>
+              Ponencias: Laura Rodríguez Montecino, Francisco López Rupérez, y
+              Miguel Ángel Tirado.
+            </p>
+            <ion-button
+              expand="block"
+              style="--background: #f2c84b; --color: #000000"
+            >
+              Más información
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <!-- Segunda fila -->
+    <ion-row>
+      <!-- Columna 1 -->
+      <ion-col size="12" size-md="6" size-lg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Cuándo y dónde</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Sevilla, viernes 24 y sábado 25 de octubre de 2025</p>
+            <p>IES Martínez Montañés en Sevilla (Salón de Actos)</p>
+            <p>C/ Fernández de Ribera, 17, 41005 Sevilla</p>
+            <ion-button
+              slot="end"
+              style="--background: #f2c84b; --color: #000000"
+            >
+              MÁS INFORMACIÓN
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Columna 2 -->
+      <ion-col size="12" size-md="6" size-lg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Mesas I, II y III congreso</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <iframe
+              src="https://www.youtube.com/embed/QgkmGSbMbrk?si=hafo2TLas_XrXO3Z"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+            <ion-button
+              expand="block"
+              style="--background: #f2c84b; --color: #000000"
+            >
+              Ver todas las mesas
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <!-- Columna 3 -->
+      <ion-col size="12" size-md="6" size-lg="4">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Prensa</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Varios recortes prensa o texto</p>
+            <ion-button
+              expand="block"
+              style="--background: #f2c84b; --color: #000000"
+            >
+              Ver más artículos de prensa
+            </ion-button>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
