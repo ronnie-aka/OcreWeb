@@ -31,10 +31,6 @@
 }
 
 // CSS tabla
-ion-row {
-  align-items: stretch; /* Hace que todas las columnas dentro de una fila tengan la misma altura */
-}
-
 ion-col {
   display: flex; /* Hace que las columnas sean flexibles */
   flex: 1; /* Asegura que todas las columnas tengan el mismo tamaño */
@@ -44,9 +40,7 @@ ion-card {
   display: flex;
   flex-direction: column;
   height: 100%; /* Asegura que la tarjeta ocupe toda la altura de la columna */
-}
-
-ion-card {
+  width: 100%;
   margin: 10px; /* Espacio entre las tarjetas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
   border-radius: 8px; /* Bordes redondeados */
