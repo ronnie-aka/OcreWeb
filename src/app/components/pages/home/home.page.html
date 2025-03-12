@@ -1,38 +1,47 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title size="large">
-      <div class="logo-container">
-        <img src="assets/logo/logo.png" alt="Logo" class="main-logo" />
+<ion-content [fullscreen]="true">
+  <ion-title size="large">
+    <div class="logo-container">
+      <img src="assets/logo/logo.png" alt="Logo" class="main-logo" />
+  
+      <!-- Contenedor de redes sociales -->
+      <div class="social-container">
+        <!-- Sección OCRE -->
         <div class="social-logos">
-          <!-- Logo de X (Twitter) -->
-          <a href="https://x.com/FEpisteme" target="_blank" class="social-logo">
-            <img src="assets/icon/x.png" alt="X" />
-          </a>
+          <h3>OCRE</h3>
+          <div class="logos">
+            <a href="https://x.com/FEpisteme" target="_blank" class="social-logo">
+              <img src="assets/icon/x.png" alt="X" />
+            </a>
+            <a
+              href="https://www.facebook.com/fundacioepisteme"
+              target="_blank"
+              class="social-logo"
+            >
+              <img src="assets/icon/facebook.png" alt="Facebook" />
+            </a>
+          </div>
+        </div>
 
-          <!-- Logo de Facebook -->
-          <a
-            href="https://www.facebook.com/fundacioepisteme"
-            target="_blank"
-            class="social-logo"
-          >
-            <img src="assets/icon/facebook.png" alt="Facebook" />
-          </a>
-
-          <!-- Logo de YouTube -->
-          <a
-            href="https://www.youtube.com/@associacioocre4691"
-            target="_blank"
-            class="social-logo"
-          >
-            <img src="assets/icon/youtube.png" alt="YouTube" />
-          </a>
+        <!-- Sección APIA -->
+        <div class="social-logos">
+          <h3>APIA</h3>
+          <div class="logos">
+            <a href="https://x.com/apiaprofesores" target="_blank" class="social-logo">
+              <img src="assets/icon/x.png" alt="X" />
+            </a>
+            <a
+              href="https://www.facebook.com/aso.APIA"
+              target="_blank"
+              class="social-logo"
+            >
+              <img src="assets/icon/facebook.png" alt="Facebook" />
+            </a>
+          </div>
         </div>
       </div>
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+    </div>
+  </ion-title>
 
-<ion-content [fullscreen]="true">
   <ion-grid>
     <!-- Primera fila -->
     <ion-row>
@@ -41,23 +50,32 @@
         <ion-card>
           <ion-card-header>
             <ion-card-title>Sobre el congreso</ion-card-title>
+            <div class="linea-decorativa"></div>
           </ion-card-header>
           <ion-card-content>
             <p>
-              Presentamos el
-              <strong>
-                IV Congreso de Expertos Docentes para un Análisis Crítico de la
-                Realidad Educativa </strong
-              >, edición que se celebrará en Sevilla, el 25 y 26 de octubre de
-              2025.
+              <a href="https://asociacionocre.org/" target="_blank"
+                >El Observatorio Crítico de la Realidad Educativa
+              </a>
+              <strong>(OCRE)</strong>
+              y
+              <a href="https://aso-apia.org/" target="_blank"
+                >la Asociación de Profesores de Instituto de Andalucía
+              </a>
+              <strong>(APIA)</strong> organizan el
+              <strong
+                >IV Congreso de Expertos Docentes para un Análisis Crítico de la
+                Educación</strong
+              >
+              , edición que se celebrará en la IES Martínez Montañés en el
+              barrio de Nervión en
+              <strong> Sevilla el viernes, 24 y sábado, 25 de octubre</strong>.
             </p>
             <p>
-              Este encuentro, de alcance nacional, se tratarán los dos temas
-              principales:
-              <strong>
-                ¿Cuáles son los retos de la escuela del siglo XXI? La
-                recuperación de la educación como ascensor social.
-              </strong>
+              Este encuentro, de alcance nacional, servirá para analizar la
+              situación de la enseñanza en nuestro país y las posiciones que
+              diversos académicos y docentes sostienen para mejorar la actual
+              crisis educativa.
             </p>
             <ion-button
               expand="block"
@@ -74,6 +92,7 @@
         <ion-card>
           <ion-card-header>
             <ion-card-title>Programación</ion-card-title>
+            <div class="linea-decorativa"></div>
           </ion-card-header>
           <ion-card-content>
             <img src="assets/images/Octubre.png" alt="Octubre" />
@@ -92,6 +111,7 @@
         <ion-card>
           <ion-card-header>
             <ion-card-title>Ponentes</ion-card-title>
+            <div class="linea-decorativa"></div>
           </ion-card-header>
           <ion-card-content>
             <p>
@@ -116,6 +136,7 @@
         <ion-card>
           <ion-card-header>
             <ion-card-title>Cuándo y dónde</ion-card-title>
+            <div class="linea-decorativa"></div>
           </ion-card-header>
           <ion-card-content>
             <p>Sevilla, viernes 24 y sábado 25 de octubre de 2025</p>
@@ -124,8 +145,9 @@
             <ion-button
               slot="end"
               style="--background: #f2c84b; --color: #000000"
+              href="https://maps.app.goo.gl/MYcxKfbKdnN6z33J7?g_st=ac"
             >
-              MÁS INFORMACIÓN
+              Abrir ubicación
             </ion-button>
           </ion-card-content>
         </ion-card>
@@ -136,6 +158,7 @@
         <ion-card>
           <ion-card-header>
             <ion-card-title>Mesas I, II y III congreso</ion-card-title>
+            <div class="linea-decorativa"></div>
           </ion-card-header>
           <ion-card-content>
             <iframe
@@ -161,6 +184,7 @@
         <ion-card>
           <ion-card-header>
             <ion-card-title>Prensa</ion-card-title>
+            <div class="linea-decorativa"></div>
           </ion-card-header>
           <ion-card-content>
             <p>Varios recortes prensa o texto</p>
@@ -174,5 +198,26 @@
         </ion-card>
       </ion-col>
     </ion-row>
+    <!-- Tercera fila -->
+    <ion-row>
+      <ion-card>
+        <ion-card-title>¿Te gustaría participar?</ion-card-title>
+        <ion-button
+          expand="block"
+          style="--background: #f2c84b; --color: #000000"
+        >
+          ¡Inscríbete!
+        </ion-button>
+      </ion-card>
+    </ion-row>
   </ion-grid>
+
+  <!-- Logo de YouTube -->
+  <a
+    href="https://www.youtube.com/@associacioocre4691"
+    target="_blank"
+    class="social-logo"
+  >
+    <img src="assets/icon/youtube.png" alt="YouTube" />
+  </a>
 </ion-content>

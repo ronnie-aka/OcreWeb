@@ -1,25 +1,46 @@
 .logo-container {
-  position: relative;
-  display: inline-block;
+  position: relative; /* Permite posicionar elementos hijos de manera absoluta */
+  display: flex;
+  justify-content: center; /* Centra el logo principal horizontalmente */
+  align-items: center; /* Centra el logo principal verticalmente */
 }
 
 .main-logo {
   width: 100%;
   max-width: 100%;
   height: auto;
-  margin-top: 20px;
+  display: block; /* Asegura que la imagen ocupe todo el espacio */
+}
+
+.social-container {
+  position: absolute; /* Posiciona el contenedor de redes sociales sobre el logo */
+  bottom: 5%; /* Ajusta la posición vertical */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Ajusta el centrado */
+  display: flex;
+  gap: 20px; /* Espacio entre las secciones OCRE y APIA */
 }
 
 .social-logos {
-  position: absolute;
-  bottom: 7%;
-  left: 40%;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  gap: 10px; /* Espacio entre el título y los logos */
+}
+
+.social-logos h3 {
+  margin: 0; /* Elimina el margen predeterminado del título */
+  font-size: 1.2em; /* Tamaño del texto */
+  font-weight: bold; /* Texto en negrita */
+}
+
+.logos {
+  display: flex;
+  gap: 10px; /* Espacio entre los logos */
 }
 
 .social-logo {
-  width: 5%; /* Tamaño de los logos */
+  width: 30px; /* Tamaño fijo para los logos */
   height: auto;
   opacity: 0.8;
   display: block;
@@ -29,6 +50,7 @@
   opacity: 1;
   transform: scale(1.1);
 }
+
 
 // CSS tabla
 ion-col {
@@ -46,10 +68,16 @@ ion-card {
   border-radius: 8px; /* Bordes redondeados */
 }
 
+ion-card-title{
+  text-align: center;
+  font-weight: bold;
+}
+
 ion-card-content {
   flex-grow: 1; /* Asegura que el contenido ocupe el espacio disponible */
   display: flex;
   flex-direction: column;
+  text-align: justify;
 }
 
 ion-button {
@@ -62,4 +90,55 @@ iframe {
   width: 100%;
   height: auto;
   display: block;
+}
+
+// Separación entre parrafos:
+
+p {
+  margin-bottom: 1.5em;
+}
+
+//Estilo para última fila
+
+/* Estilo específico para la última fila */
+ion-row:last-of-type {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo para la tarjeta de la última fila */
+ion-row:last-of-type ion-card {
+  width: 50%;
+  max-width: 600px; /* Ancho máximo */
+  text-align: center;
+  --background: transparent; /* Fondo transparente */
+  box-shadow: none;
+}
+
+
+ion-row:last-of-type ion-card-title {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+
+ion-row:last-of-type ion-button {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  ion-row:last-of-type ion-card {
+    width: 80%; /* Más ancho en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  ion-row:last-of-type ion-card {
+    width: 100%; /* Ocupa todo el ancho en móviles */
+  }
 }
