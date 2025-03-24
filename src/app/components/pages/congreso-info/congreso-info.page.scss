@@ -1,0 +1,38 @@
+/* Estilos para el ion-header */
+ion-header {
+  background-color: transparent;
+  box-shadow: none;
+  position: relative; /* Asegúrate de que no sea "sticky" o "fixed" */
+}
+
+/* Estilos para el video-container */
+.video-container {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 560px; /* Tamaño máximo (ancho original del iframe) */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  aspect-ratio: 16 / 9; /* Relación de aspecto 16:9 */
+}
+
+/* Estilos para el iframe */
+iframe {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa todo el alto del contenedor */
+}
+
+/* Estilos para el ion-content */
+ion-content {
+  --background: #ffffff; /* Fondo blanco (opcional) */
+  --padding-top: 20px; /* Espacio superior (opcional) */
+  --padding-bottom: 20px; /* Espacio inferior (opcional) */
+}
+
+/* Estilos para los párrafos */
+p {
+  margin-bottom: 1.5em; /* Espacio entre párrafos */
+  line-height: 1.6; /* Interlineado para mejor legibilidad */
+}
+
+/* Estilos para el texto en cursiva */
+em {
+  font-style: italic; /* Texto en cursiva para énfasis */
+}

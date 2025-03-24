@@ -17,7 +17,7 @@ const routes: Routes = [
   {
     path: 'ponentes',
     loadChildren: () => import('./components/pages/ponentes/ponentes.module').then( m => m.PonentesPageModule)
-  }
+  },
 ];
 @NgModule({
   imports: [

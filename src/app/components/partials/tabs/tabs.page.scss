@@ -1,1 +1,10 @@
+ion-tab-bar {
+    --background: #F2B84B; /* Cambia este valor al color que desees */
+    --color: hsl(0, 0%, 2%);
+    --color-selected: #ffffff;
+  }
 
+ion-label{
+  font-weight: bold;
+  font-size: 1.3em;
+}
