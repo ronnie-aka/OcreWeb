@@ -12,7 +12,7 @@ const routes: Routes = [
         loadChildren: () => import('../../pages/congreso-info/congreso-info.module').then(m => m.CongresoInfoPageModule)
       },
       {
-        path: 'programacion',
+        path: 'programa',
         loadChildren: () => import('../../pages/programacion/programacion.module').then(m => m.ProgramacionPageModule)
       },
       {

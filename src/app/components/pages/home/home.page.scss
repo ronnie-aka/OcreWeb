@@ -242,10 +242,38 @@ ion-row:last-of-type ion-button {
 .linea-decorativa {
   width: 100%; /* Ancho completo del contenedor */
   height: 4px; /* Grosor de la línea */
-  background-color: #F2B84B; /* Color de la línea */
+  background-color: #f2c84b; /* Color de la línea */
   margin-top: 8px; /* Espacio superior (ajusta según sea necesario) */
 }
 
 .no-border-footer {
   box-shadow: none !important;
+}
+
+
+
+/* Contenedor principal del grid */
+.grid-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Pantallas mayores a 1440px */
+@media (min-width: 1441px) {
+  .grid-container {
+    width: 95%;
+    max-width: 1600px; /* Opcional: límite máximo */
+  }
+}
+
+/* Mantén el grid responsive en otras pantallas */
+ion-grid {
+  width: 100%;
+  padding: 0 16px; /* Añade padding lateral en móviles */
+}
+
+@media (min-width: 768px) {
+  ion-grid {
+    padding: 0 24px; /* Padding mayor en tablets */
+  }
 }

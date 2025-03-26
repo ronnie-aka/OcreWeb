@@ -10,14 +10,14 @@
           <h3>OCRE</h3>
           <div class="logos">
             <a
-              href="https://x.com/FEpisteme"
+              href="https://x.com/AsociacionOcre"
               target="_blank"
               class="social-logo"
             >
               <img src="assets/icon/x.png" alt="X" />
             </a>
             <a
-              href="https://www.facebook.com/fundacioepisteme"
+              href="https://www.facebook.com/OCRE.EDU"
               target="_blank"
               class="social-logo"
             >
@@ -50,177 +50,181 @@
     </div>
   </ion-title>
 
-  <ion-grid>
-    <!-- Primera fila -->
-    <ion-row>
-      <!-- Columna 1 -->
-      <ion-col size="12" size-md="6" size-lg="4">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Sobre el congreso</ion-card-title>
-            <div class="linea-decorativa"></div>
-          </ion-card-header>
-          <ion-card-content>
-            <p>
-              <a href="https://asociacionocre.org/" target="_blank"
-                >El Observatorio Crítico de la Realidad Educativa
-              </a>
-              <strong>(OCRE)</strong>
-              y
-              <a href="https://aso-apia.org/" target="_blank"
-                >la Asociación de Profesores de Instituto de Andalucía
-              </a>
-              <strong>(APIA)</strong> organizan el
-              <strong
-                >IV Congreso de Expertos Docentes para un Análisis Crítico de la
-                Educación</strong
+  <div class="grid-container">
+    <ion-grid>
+      <!-- Primera fila -->
+      <ion-row>
+        <!-- Columna 1 -->
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Sobre el congreso</ion-card-title>
+              <div class="linea-decorativa"></div>
+            </ion-card-header>
+            <ion-card-content>
+              <p>
+                <a href="https://asociacionocre.org/" target="_blank"
+                  >El Observatorio Crítico de la Realidad Educativa
+                </a>
+                <strong>(OCRE)</strong>
+                y
+                <a href="https://aso-apia.org/" target="_blank"
+                  >la Asociación de Profesores de Instituto de Andalucía
+                </a>
+                <strong>(APIA)</strong> organizan el
+                <strong
+                  >IV Congreso de Expertos Docentes para un Análisis Crítico de la
+                  Educación</strong
+                >
+                , edición que se celebrará en la IES Martínez Montañés en el
+                barrio de Nervión en
+                <strong> Sevilla el viernes, 24 y sábado, 25 de octubre</strong>.
+              </p>
+              <p>
+                Este encuentro, de alcance nacional, servirá para analizar la
+                situación de la enseñanza en nuestro país y las posiciones que
+                diversos académicos y docentes sostienen para mejorar la actual
+                crisis educativa.
+              </p>
+              <ion-button
+                (click)="navigateToPage('congreso/info')"
+                expand="block"
+                style="--background: #f2c84b; --color: #000000"
               >
-              , edición que se celebrará en la IES Martínez Montañés en el
-              barrio de Nervión en
-              <strong> Sevilla el viernes, 24 y sábado, 25 de octubre</strong>.
-            </p>
-            <p>
-              Este encuentro, de alcance nacional, servirá para analizar la
-              situación de la enseñanza en nuestro país y las posiciones que
-              diversos académicos y docentes sostienen para mejorar la actual
-              crisis educativa.
-            </p>
-            <ion-button
-              (click)="navigateToPage('congreso/info')"
-              expand="block"
-              style="--background: #f2b84b; --color: #000000"
-            >
-              Más información
-            </ion-button>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <!-- Columna 2 -->
-      <ion-col size="12" size-md="6" size-lg="4">
+                Más información
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+  
+        <!-- Columna 2 -->
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Programación</ion-card-title>
+              <div class="linea-decorativa"></div>
+            </ion-card-header>
+            <ion-card-content>
+              <img src="assets/images/Octubre.png" alt="Octubre" />
+              <ion-button
+                (click)="navigateToPage('congreso/programa')"
+                expand="block"
+                style="--background: #f2c84b; --color: #000000"
+              >
+                Consulta toda la programación
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+  
+        <!-- Columna 3 -->
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Ponentes</ion-card-title>
+              <div class="linea-decorativa"></div>
+            </ion-card-header>
+            <ion-card-content>
+              <p>
+                Ponencias: Laura Rodríguez Montecino, Francisco López Rupérez, y
+                Miguel Ángel Tirado.
+              </p>
+              <ion-button
+                expand="block"
+                style="--background: #f2c84b; --color: #000000"
+              >
+                Más información
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+  
+      <!-- Segunda fila -->
+      <ion-row>
+        <!-- Columna 1 -->
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Cuándo y dónde</ion-card-title>
+              <div class="linea-decorativa"></div>
+            </ion-card-header>
+            <ion-card-content>
+              <p>Sevilla, viernes 24 y sábado 25 de octubre de 2025</p>
+              <p>IES Martínez Montañés en Sevilla (Salón de Actos)</p>
+              <p>C/ Fernández de Ribera, 17, 41005 Sevilla</p>
+              <ion-button
+                slot="end"
+                style="--background: #f2c84b; --color: #000000"
+                href="https://maps.app.goo.gl/MYcxKfbKdnN6z33J7?g_st=ac"
+              >
+                Abrir ubicación
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+  
+        <!-- Columna 2 -->
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Ponencias y mesas anteriores</ion-card-title>
+              <div class="linea-decorativa"></div>
+            </ion-card-header>
+            <ion-card-content>
+              <iframe
+                src="https://www.youtube.com/embed/QgkmGSbMbrk?si=hafo2TLas_XrXO3Z"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+              <ion-button
+                expand="block"
+                style="--background: #f2c84b; --color: #000000"
+              >
+                Ver todas las mesas
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+  
+        <!-- Columna 3 -->
+        <ion-col size="12" size-md="6" size-lg="4">
+          <ion-card>
+            <ion-card-header>
+              <ion-card-title>Prensa</ion-card-title>
+              <div class="linea-decorativa"></div>
+            </ion-card-header>
+            <ion-card-content>
+              <p>Varios recortes prensa o texto</p>
+              <ion-button
+                expand="block"
+                style="--background: #f2c84b; --color: #000000"
+              >
+                Ver más artículos de prensa
+              </ion-button>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <!-- Tercera fila -->
+      <ion-row>
         <ion-card>
-          <ion-card-header>
-            <ion-card-title>Programación</ion-card-title>
-            <div class="linea-decorativa"></div>
-          </ion-card-header>
-          <ion-card-content>
-            <img src="assets/images/Octubre.png" alt="Octubre" />
-            <ion-button
-              (click)="navigateToPage('congreso/programacion')"
-              expand="block"
-              style="--background: #f2b84b; --color: #000000"
-            >
-              Consulta toda la programación
-            </ion-button>
-          </ion-card-content>
+          <ion-card-title>¿Te gustaría participar?</ion-card-title>
+          <ion-button
+            expand="block"
+            style="--background: #f2c84b; --color: #000000"
+          >
+            ¡Inscríbete!
+          </ion-button>
         </ion-card>
-      </ion-col>
+      </ion-row>
+    </ion-grid>
 
-      <!-- Columna 3 -->
-      <ion-col size="12" size-md="6" size-lg="4">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Ponentes</ion-card-title>
-            <div class="linea-decorativa"></div>
-          </ion-card-header>
-          <ion-card-content>
-            <p>
-              Ponencias: Laura Rodríguez Montecino, Francisco López Rupérez, y
-              Miguel Ángel Tirado.
-            </p>
-            <ion-button
-              expand="block"
-              style="--background: #f2b84b; --color: #000000"
-            >
-              Más información
-            </ion-button>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
+  </div>
 
-    <!-- Segunda fila -->
-    <ion-row>
-      <!-- Columna 1 -->
-      <ion-col size="12" size-md="6" size-lg="4">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Cuándo y dónde</ion-card-title>
-            <div class="linea-decorativa"></div>
-          </ion-card-header>
-          <ion-card-content>
-            <p>Sevilla, viernes 24 y sábado 25 de octubre de 2025</p>
-            <p>IES Martínez Montañés en Sevilla (Salón de Actos)</p>
-            <p>C/ Fernández de Ribera, 17, 41005 Sevilla</p>
-            <ion-button
-              slot="end"
-              style="--background: #f2b84b; --color: #000000"
-              href="https://maps.app.goo.gl/MYcxKfbKdnN6z33J7?g_st=ac"
-            >
-              Abrir ubicación
-            </ion-button>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <!-- Columna 2 -->
-      <ion-col size="12" size-md="6" size-lg="4">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Ponencias y mesas anteriores</ion-card-title>
-            <div class="linea-decorativa"></div>
-          </ion-card-header>
-          <ion-card-content>
-            <iframe
-              src="https://www.youtube.com/embed/QgkmGSbMbrk?si=hafo2TLas_XrXO3Z"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
-            <ion-button
-              expand="block"
-              style="--background: #f2b84b; --color: #000000"
-            >
-              Ver todas las mesas
-            </ion-button>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-
-      <!-- Columna 3 -->
-      <ion-col size="12" size-md="6" size-lg="4">
-        <ion-card>
-          <ion-card-header>
-            <ion-card-title>Prensa</ion-card-title>
-            <div class="linea-decorativa"></div>
-          </ion-card-header>
-          <ion-card-content>
-            <p>Varios recortes prensa o texto</p>
-            <ion-button
-              expand="block"
-              style="--background: #f2b84b; --color: #000000"
-            >
-              Ver más artículos de prensa
-            </ion-button>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-    <!-- Tercera fila -->
-    <ion-row>
-      <ion-card>
-        <ion-card-title>¿Te gustaría participar?</ion-card-title>
-        <ion-button
-          expand="block"
-          style="--background: #f2b84b; --color: #000000"
-        >
-          ¡Inscríbete!
-        </ion-button>
-      </ion-card>
-    </ion-row>
-  </ion-grid>
 
   <!-- Organizadores -->
 

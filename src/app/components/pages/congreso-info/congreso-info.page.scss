@@ -51,3 +51,38 @@ em {
   font-style: italic; /* Texto en cursiva para énfasis */
 }
 
+
+/* Estilo para webs anteriores*/
+.congresos-anteriores {
+  text-align: center; /* Centra todo el contenido dentro del ion-card */
+}
+
+.titulo-congreso {
+  font-weight: bold; /* Aplica negrita */
+  color: black;
+  margin: 16px 0; /* Añade un margen superior e inferior para mejor espaciado */
+}
+
+.enlace-congreso {
+  text-decoration: none; /* Quita el subrayado de los enlaces */
+  color: rgb(46, 44, 44); /* Hereda el color del texto (o puedes definir uno, ej: #3880ff) */
+  display: block; /* Hace que el enlace ocupe toda la línea (mejor para centrado) */
+  margin: 8px 0; /* Espaciado entre enlaces */
+}
+
+/* Opcional: Estilo para hover (cuando el mouse pasa sobre el enlace) */
+.enlace-congreso:hover {
+  color: #3880ff; /* Cambia el color al pasar el cursor */
+}
+
+@media (max-width: 768px) {
+  .titulo-congreso {
+    font-size: 1,3em;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-congreso {
+    font-size: 1,3em;
+  }
+}

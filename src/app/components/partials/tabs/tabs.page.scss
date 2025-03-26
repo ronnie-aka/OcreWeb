@@ -1,10 +1,49 @@
 ion-tab-bar {
-    --background: #F2B84B; /* Cambia este valor al color que desees */
-    --color: hsl(0, 0%, 2%);
-    --color-selected: #ffffff;
-  }
+  --background: #f2c84b; /* Cambia este valor al color que desees */
+  --color: hsl(0, 0%, 2%);
+  --color-selected: #ffffff;
+}
 
-ion-label{
+ion-label {
   font-weight: bold;
   font-size: 1.3em;
 }
+
+ion-tab-bar {
+  --background: #f2c84b; /* Color de fondo amarillo */
+  --color: hsl(0, 0%, 2%); /* Texto negro */
+  --color-selected: #ffffff; /* Texto blanco al seleccionar */
+
+  /* Scroll horizontal */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; /* Suaviza el scroll en iOS */
+  display: block;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  padding-bottom: 5px; /* Espacio para el scroll (opcional) */
+
+  width: 100%;
+}
+
+/* Estilo para cada botón */
+ion-tab-button {
+  display: inline-flex !important; /* Fuerza el display inline */
+  flex: 0 0 auto; /* Evita que los botones se estiren o encojan */
+  min-width: fit-content;
+  padding: 0 12px; /* Ajusta el padding horizontal */
+  padding-left: 10px;
+}
+
+/* Estilo para las etiquetas */
+ion-tab-button ion-label {
+  font-weight: bold;
+  font-size: 1.3em;
+  white-space: nowrap;
+}
+
+/* Ocultar scrollbar (opcional) */
+ion-tab-bar::-webkit-scrollbar {
+  display: none;
+}
+
+

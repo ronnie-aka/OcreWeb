@@ -15,6 +15,14 @@ export class ProgramacionPage implements OnInit {
     window.open(url, '_blank');
   }
 
+  ionViewDidEnter() {
+    const tabBar = document.querySelector('ion-tab-bar');
+    if (tabBar) {
+      const activeTab = tabBar.querySelector('ion-tab-button[tab-selected]');
+      activeTab?.scrollIntoView({ block: 'center', inline: 'center' });
+    }
+  }
+
   ngOnInit() {
   }
 
