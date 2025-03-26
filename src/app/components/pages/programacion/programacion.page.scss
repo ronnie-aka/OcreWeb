@@ -1,0 +1,78 @@
+/* Título principal responsivo */
+.centered-title {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 3%;
+  font-size: clamp(
+    1.3rem,
+    6vw,
+    2rem
+  ); /* Tamaño entre 1.5rem y 2.5rem, ajustándose al 6% del viewport width */
+  line-height: 1.2;
+  padding: 0 5%;
+}
+
+/* Subtítulo responsivo */
+.centered-text {
+  text-align: center;
+  padding: 0 8%;
+  margin: 2% 0 4% 0;
+  font-size: clamp(
+    1rem,
+    4vw,
+    1.4rem
+  ); /* Tamaño entre 1rem y 1.5rem, ajustándose al 4% del viewport width */
+  line-height: 1.4;
+  color: #000000; /* Color más suave para el subtítulo */
+}
+
+/* Media queries para ajustes específicos */
+@media (max-width: 600px) {
+  .centered-title {
+    margin-top: 5%;
+  }
+  .centered-text {
+    margin: 4% 0 8% 0;
+    padding: 0 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .centered-title {
+    margin-top: 2%;
+  }
+}
+
+/* Contenedor de imagen */
+.image-container {
+  margin: 0;
+  padding: 3%;
+  width: 100%;
+}
+
+/* Imagen responsive */
+.responsive-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Botón personalizado */
+.custom-button {
+  --padding-start: 2em;
+  --padding-end: 2em;
+  width: fit-content;
+  margin: 0 auto;
+  display: block;
+  border-radius: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3%;
+}
+
+//Linea amarilla
+.linea-decorativa {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 4px; /* Grosor de la línea */
+  background-color: #F2B84B; /* Color de la línea */
+  margin-top: 8px; /* Espacio superior (ajusta según sea necesario) */
+}

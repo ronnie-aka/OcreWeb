@@ -1,3 +1,17 @@
+/*Estilos letra */
+ion-card-title {
+  font-weight: bold;
+  font-size: 2rem; /* Tamaño base */
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+ion-card{
+  margin: 3%;
+}
+
+
 /* Estilos para el ion-header */
 ion-header {
   background-color: transparent;
@@ -36,3 +50,4 @@ p {
 em {
   font-style: italic; /* Texto en cursiva para énfasis */
 }
+

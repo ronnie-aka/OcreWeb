@@ -85,9 +85,10 @@
               diversos académicos y docentes sostienen para mejorar la actual
               crisis educativa.
             </p>
-            <ion-button (click)="navigateToPage()"
+            <ion-button
+              (click)="navigateToPage('congreso/info')"
               expand="block"
-              style="--background: #F2B84B; --color: #000000"
+              style="--background: #f2b84b; --color: #000000"
             >
               Más información
             </ion-button>
@@ -105,8 +106,9 @@
           <ion-card-content>
             <img src="assets/images/Octubre.png" alt="Octubre" />
             <ion-button
+              (click)="navigateToPage('congreso/programacion')"
               expand="block"
-              style="--background: #F2B84B; --color: #000000"
+              style="--background: #f2b84b; --color: #000000"
             >
               Consulta toda la programación
             </ion-button>
@@ -128,7 +130,7 @@
             </p>
             <ion-button
               expand="block"
-              style="--background: #F2B84B; --color: #000000"
+              style="--background: #f2b84b; --color: #000000"
             >
               Más información
             </ion-button>
@@ -152,7 +154,7 @@
             <p>C/ Fernández de Ribera, 17, 41005 Sevilla</p>
             <ion-button
               slot="end"
-              style="--background: #F2B84B; --color: #000000"
+              style="--background: #f2b84b; --color: #000000"
               href="https://maps.app.goo.gl/MYcxKfbKdnN6z33J7?g_st=ac"
             >
               Abrir ubicación
@@ -179,7 +181,7 @@
             ></iframe>
             <ion-button
               expand="block"
-              style="--background: #F2B84B; --color: #000000"
+              style="--background: #f2b84b; --color: #000000"
             >
               Ver todas las mesas
             </ion-button>
@@ -198,7 +200,7 @@
             <p>Varios recortes prensa o texto</p>
             <ion-button
               expand="block"
-              style="--background: #F2B84B; --color: #000000"
+              style="--background: #f2b84b; --color: #000000"
             >
               Ver más artículos de prensa
             </ion-button>
@@ -212,7 +214,7 @@
         <ion-card-title>¿Te gustaría participar?</ion-card-title>
         <ion-button
           expand="block"
-          style="--background: #F2B84B; --color: #000000"
+          style="--background: #f2b84b; --color: #000000"
         >
           ¡Inscríbete!
         </ion-button>
@@ -235,74 +237,8 @@
     </div>
   </div>
 
-  <!-- Todas nuestras redes sociales: -->
-
-  <div class="organizadores-container">
-    <!-- Sección OCRE -->
-    <div class="linea-decorativa"></div>
-    <h3>redes OCRE:</h3>
-    <div class="social-logos">
-      <div class="logos">
-        <a href="https://x.com/FEpisteme" target="_blank" class="logo-redes">
-          <img src="assets/icon/x.png" alt="X" />
-        </a>
-        <a
-          href="https://www.facebook.com/fundacioepisteme"
-          target="_blank"
-          class="logo-redes"
-        >
-          <img src="assets/icon/facebook.png" alt="Facebook" />
-        </a>
-        <a
-          href="https://www.youtube.com/@associacioocre4691"
-          target="_blank"
-          class="logo-redes"
-        >
-          <img src="assets/icon/youtube.png" alt="YouTube" />
-        </a>
-      </div>
-    </div>
-    <!-- Sección APIA -->
-    <h3>redes APIA:</h3>
-    <div class="social-logos">
-      <div class="logos" style="margin-bottom: 15px">
-        <a
-          href="https://x.com/apiaprofesores"
-          target="_blank"
-          class="logo-redes"
-        >
-          <img src="assets/icon/x.png" alt="X" />
-        </a>
-        <a
-          href="https://www.facebook.com/aso.APIA"
-          target="_blank"
-          class="logo-redes"
-        >
-          <img src="assets/icon/facebook.png" alt="Facebook" />
-        </a>
-        <a
-          href="https://www.youtube.com/@APIAandalucia"
-          target="_blank"
-          class="logo-redes"
-        >
-          <img src="assets/icon/youtube.png" alt="YouTube" />
-        </a>
-        <a
-          href="https://www.instagram.com/apia_educacion/"
-          target="_blank"
-          class="logo-redes"
-        >
-          <img src="assets/icon/instagram.jpg" alt="YouTube" />
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <!-- AVISOS LEGALES-->
-  <div class="legal-container">
-    <a href="/aviso-legal"><h3>Aviso Legal</h3></a>
-    <a href="/politica-privacidad"><h3>Política de privacidad</h3></a>
-    <a href="/politica-cookies"><h3>Política de cookies</h3></a>
-    <a href="/configuracion-cookies"><h3>Configuración de cookies</h3></a>
-  </div>
+  <div class="linea-decorativa"></div>
+  <ion-footer class="no-border-footer"
+    ><app-pie-pagina></app-pie-pagina
+  ></ion-footer>
 </ion-content>

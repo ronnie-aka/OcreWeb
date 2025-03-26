@@ -11,8 +11,8 @@ export class HomePage implements OnInit {
 
   constructor(private router: Router) {}
 
-  navigateToPage() {
-    this.router.navigate(['tabs/congreso-info']);
+  navigateToPage(ruta: string) {
+    this.router.navigate([ruta]);
   }
 
   ngOnInit() {

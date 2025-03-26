@@ -8,13 +8,16 @@ import { ProgramacionPageRoutingModule } from './programacion-routing.module';
 
 import { ProgramacionPage } from './programacion.page';
 
+import { PiePaginaComponent } from '../../partials/pie-pagina/pie-pagina.component';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProgramacionPageRoutingModule
+    ProgramacionPageRoutingModule,
+    PiePaginaComponent
   ],
-  declarations: [ProgramacionPage]
+  declarations: [ProgramacionPage,]
 })
 export class ProgramacionPageModule {}

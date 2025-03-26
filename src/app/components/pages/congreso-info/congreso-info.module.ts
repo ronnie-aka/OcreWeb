@@ -8,13 +8,16 @@ import { CongresoInfoPageRoutingModule } from './congreso-info-routing.module';
 
 import { CongresoInfoPage } from './congreso-info.page';
 
+import { PiePaginaComponent } from '../../partials/pie-pagina/pie-pagina.component';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CongresoInfoPageRoutingModule
+    CongresoInfoPageRoutingModule,
+    PiePaginaComponent,
   ],
-  declarations: [CongresoInfoPage]
+  declarations: [CongresoInfoPage],
 })
 export class CongresoInfoPageModule {}

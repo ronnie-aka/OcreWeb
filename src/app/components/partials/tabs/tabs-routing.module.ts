@@ -8,7 +8,7 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: 'congreso-info',
+        path: 'info',
         loadChildren: () => import('../../pages/congreso-info/congreso-info.module').then(m => m.CongresoInfoPageModule)
       },
       {
