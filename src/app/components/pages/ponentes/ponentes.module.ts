@@ -8,12 +8,15 @@ import { PonentesPageRoutingModule } from './ponentes-routing.module';
 
 import { PonentesPage } from './ponentes.page';
 
+import { PiePaginaComponent } from '../../partials/pie-pagina/pie-pagina.component';
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    PonentesPageRoutingModule
+    PonentesPageRoutingModule,
+    PiePaginaComponent
   ],
   declarations: [PonentesPage]
 })

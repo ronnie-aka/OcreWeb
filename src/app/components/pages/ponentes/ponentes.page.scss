@@ -1,0 +1,140 @@
+/* ----- Estilos Generales ----- */
+.linea-decorativa {
+  height: 3px;
+  background-color: #f2c84b;
+  margin: 10px 0 20px;
+  width: 100%;
+}
+
+ion-grid {
+  margin-bottom: 40px;
+}
+
+h2 {
+  color: #000000;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+/* ----- Estructura Card ----- */
+ion-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); /* Sombra más oscura */
+  border-radius: 8px;
+  text-align: justify;
+  border: 1px solid #e0e0e0; /* Borde más visible */
+}
+
+/* ----- Contenedor Nombre + Foto ----- */
+.nombre-foto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  min-height: 130px;
+}
+
+/* ----- Foto ----- */
+.foto-participante {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f2c84b;
+  margin-bottom: 12px;
+}
+
+/* ----- Títulos ----- */
+ion-card ion-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  line-height: 1.3;
+  display: block;
+}
+
+/* ----- Contenido Textual ----- */
+ion-card-content {
+  padding: 0;
+  margin-top: auto;
+}
+
+ion-card p {
+  margin: 0;
+}
+
+/* ----- Cards de 1 columna ----- */
+ion-col[size="12"] ion-card {
+    max-width: calc(50% - 8px);
+    margin: 0 auto;
+  }
+
+/* ----- Ajustes de Ancho ----- */
+/* Pantallas medianas (tablets) */
+@media (min-width: 769px) {
+  ion-col[size-md="6"] ion-card {
+    max-width: 90%; /* Más ancho que antes */
+    margin: 0 auto;
+  }
+}
+
+/* Pantallas grandes (desktops) */
+@media (min-width: 992px) {
+  ion-col[size-md="6"] ion-card {
+    max-width: 85%; /* Aún más ancho */
+  }
+
+  ion-col[size="12"] ion-card {
+    max-width: 70%; /* Más ancho para cards de 1 columna */
+  }
+}
+
+/* Pantallas muy grandes */
+@media (min-width: 1200px) {
+  ion-col[size-md="6"] ion-card {
+    max-width: 80%;
+  }
+
+  ion-col[size="12"] ion-card {
+    max-width: 60%;
+  }
+}
+
+/* ----- Responsive Pequeño ----- */
+@media (max-width: 768px) {
+  ion-col[size="12"] ion-card,
+  ion-col[size-md="6"] ion-card {
+    max-width: 100%;
+  }
+
+  .foto-participante {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nombre-foto {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  ion-card ion-title {
+    font-size: 1.1rem;
+  }
+
+  .foto-participante {
+    width: 60px;
+    height: 60px;
+  }
+
+  .nombre-foto {
+    min-height: 110px;
+  }
+}
