@@ -277,3 +277,11 @@ ion-grid {
     padding: 0 24px; /* Padding mayor en tablets */
   }
 }
+
+.card-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

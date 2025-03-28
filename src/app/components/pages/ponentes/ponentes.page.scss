@@ -27,6 +27,7 @@ ion-card {
   border-radius: 8px;
   text-align: justify;
   border: 1px solid #e0e0e0; /* Borde más visible */
+  position: relative; /* Necesario para el footer */
 }
 
 /* ----- Contenedor Nombre + Foto ----- */
@@ -72,9 +73,9 @@ ion-card p {
 
 /* ----- Cards de 1 columna ----- */
 ion-col[size="12"] ion-card {
-    max-width: calc(50% - 8px);
-    margin: 0 auto;
-  }
+  max-width: calc(50% - 8px);
+  margin: 0 auto;
+}
 
 /* ----- Ajustes de Ancho ----- */
 /* Pantallas medianas (tablets) */
@@ -139,8 +140,60 @@ ion-col[size="12"] ion-card {
   }
 }
 
-
-.footer{
+.footer {
   margin-top: 15px;
   text-align: center;
+}
+
+/* Contenedor del footer */
+.footer-logos {
+  margin-top: auto; /* Sigue empujando el footer hacia abajo */
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column; /* Cambio a columna */
+  align-items: center; /* Centrado horizontal */
+  gap: 10px; /* Espacio entre título y logos */
+}
+
+/* Estilo para el título */
+.footer-logos ion-title {
+  font-size: 0.9rem; /* Tamaño un poco más pequeño */
+  color: #666; /* Color más suave */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Contenedor para los logos (nuevo) */
+.logos-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Estilo para los logos (ajustado) */
+.social-logo {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .social-logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-logos {
+    gap: 8px;
+  }
+
+  .footer-logos ion-title {
+    font-size: 0.8rem;
+  }
 }
