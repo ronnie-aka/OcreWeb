@@ -39,5 +39,18 @@
 /*@import "@ionic/angular/css/palettes/dark.system.css";*/
 
 .no-border-footer {
-    box-shadow: none !important;
-  }
+  box-shadow: none !important;
+}
+
+
+
+ion-card {
+  contain: content; /* Ayuda con el renderizado en iOS */
+}
+
+/* En tu archivo CSS global o componente */
+ion-title.title-default {
+  white-space: normal !important;
+  display: block !important;
+  text-align: center !important;
+}
