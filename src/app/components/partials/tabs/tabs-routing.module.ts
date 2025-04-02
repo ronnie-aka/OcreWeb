@@ -19,6 +19,14 @@ const routes: Routes = [
         path: 'ponentes',
         loadChildren: () => import('../../pages/ponentes/ponentes.module').then(m => m.PonentesPageModule)
       },
+      {
+        path: 'aviso-legal',
+        loadChildren: () => import('../../pages/aviso-legal/aviso-legal-routing.module').then(m => m.AvisoLegalPageRoutingModule)
+      },
+      {
+        path: 'politica-privacidad',
+        loadChildren: () => import('../../pages/politica-privacidad/politica-privacidad.module').then(m => m.PoliticaPrivacidadPageModule)
+      },
     ]
   },
 ];

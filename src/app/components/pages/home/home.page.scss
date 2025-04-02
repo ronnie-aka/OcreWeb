@@ -102,6 +102,7 @@
   margin-bottom: 10px; /* Espacio entre el título y los logos */
   font-size: 1.5em; /* Tamaño del texto */
   font-weight: bold; /* Texto en negrita */
+  color: #592192;
 }
 
 @media (max-width: 768px) {
@@ -167,6 +168,7 @@ ion-card {
 ion-card-title{
   text-align: center;
   font-weight: bold;
+  --color: #592192;
 }
 
 ion-card-content {
@@ -242,7 +244,7 @@ ion-row:last-of-type ion-button {
 .linea-decorativa {
   width: 100%; /* Ancho completo del contenedor */
   height: 4px; /* Grosor de la línea */
-  background-color: #f2c84b; /* Color de la línea */
+  background-color: #9b7bbc; /* Color de la línea */
   margin-top: 8px; /* Espacio superior (ajusta según sea necesario) */
 }
 

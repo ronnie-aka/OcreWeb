@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pie-pagina',
@@ -10,8 +11,12 @@ import { IonicModule } from '@ionic/angular';
 })
 export class PiePaginaComponent  implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {}
+
+  navigateToPage(ruta: string) {
+    this.router.navigate([ruta]);
+  }
 
 }

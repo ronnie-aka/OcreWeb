@@ -42,10 +42,27 @@
   box-shadow: none !important;
 }
 
+ion-grid{
+  background: #fcedda;
+  --background: #fcedda;
+}
 
+ion-content {
+  --background: #fcedda;
+  background: #fcedda;
+}
+
+ion-footer {
+  --background: #fcedda;
+  background: #fcedda;
+}
 
 ion-card {
   contain: content; /* Ayuda con el renderizado en iOS */
+}
+
+ion-button {
+  --color: #ffffff; /* Texto blanco para todos los botones */
 }
 
 /* En tu archivo CSS global o componente */

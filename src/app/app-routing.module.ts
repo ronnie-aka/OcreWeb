@@ -11,18 +11,14 @@ const routes: Routes = [
     loadChildren: () => import('./components/pages/home/home.module').then( m => m.HomePageModule)
   },
   {
-    path: 'programa',
-    loadChildren: () => import('./components/pages/programacion/programacion.module').then( m => m.ProgramacionPageModule)
-  },
-  {
-    path: 'ponentes',
-    loadChildren: () => import('./components/pages/ponentes/ponentes.module').then( m => m.PonentesPageModule)
-  },
-  {
     path: 'congreso/home',
     redirectTo: '',
     pathMatch: 'full'
-  }
+  },
+  {
+    path: 'aviso-legal',
+    loadChildren: () => import('./components/pages/aviso-legal/aviso-legal.module').then( m => m.AvisoLegalPageModule)
+  },
 ];
 @NgModule({
   imports: [

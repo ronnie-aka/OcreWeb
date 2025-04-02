@@ -1,0 +1,84 @@
+/* Estilos generales */
+.header-title {
+  text-align: center;
+  padding: 0 20px;
+
+  h1 {
+    font-size: 2rem;
+    margin: 5%;
+    color: var(--ion-color-dark);
+  }
+}
+
+.legal-content {
+  background: var(--ion-color-light);
+  color: var(--ion-color-dark);
+  line-height: 1.6;
+
+  section {
+    margin-bottom: 2.5rem;
+    margin-left: 3%;
+    margin-right: 3%;
+
+    h2 {
+      color: var(--ion-color-primary);
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--ion-color-light-shade);
+    }
+
+    h3 {
+      color: var(--ion-color-dark);
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+
+    p,
+    ul {
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    a {
+      color: var(--ion-color-primary);
+      text-decoration: none;
+      font-weight: 500;
+    }
+  }
+
+  ion-item {
+    --background: transparent;
+    --padding-start: 0;
+    --inner-padding-end: 0;
+    margin-bottom: 1rem;
+
+    ion-label {
+      white-space: normal;
+    }
+  }
+}
+
+/* Estilos específicos para listas de Ionic */
+ion-list {
+  background: transparent;
+}
+
+.no-border-footer {
+  box-shadow: none !important;
+}
+
+.linea-decorativa {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 4px; /* Grosor de la línea */
+  background-color: #9b7bbc; /* Color de la línea */
+  margin-top: 8px; /* Espacio superior (ajusta según sea necesario) */
+}

@@ -5,6 +5,7 @@ ion-card-title {
   text-align: center;
   margin-bottom: 3%;
   margin-top: 3%;
+  color: #592192
 }
 
 ion-card{
@@ -35,7 +36,6 @@ iframe {
 
 /* Estilos para el ion-content */
 ion-content {
-  --background: #ffffff; /* Fondo blanco (opcional) */
   --padding-top: 20px; /* Espacio superior (opcional) */
   --padding-bottom: 20px; /* Espacio inferior (opcional) */
 }
@@ -59,7 +59,7 @@ em {
 
 .titulo-congreso {
   font-weight: bold; /* Aplica negrita */
-  color: black;
+  color: #592192;
   margin: 16px 0; /* Añade un margen superior e inferior para mejor espaciado */
 }
 
