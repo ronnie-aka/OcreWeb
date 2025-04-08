@@ -1,0 +1,61 @@
+/* AvisoLegalPage.scss */
+.header-title {
+  text-align: center;
+  padding: 0 20px;
+  h1 {
+    font-size: 2rem;
+    margin: 5%;
+    color: var(--ion-color-dark);
+  }
+}
+
+section {
+  margin-bottom: 2rem;
+  margin-left: 3%;
+  margin-right: 3%;
+  h2 {
+    color: black;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+  h3 {
+    font-size: 0.9rem;
+  }
+  p,
+  ul {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--ion-color-medium);
+  }
+  ul {
+    padding-left: 1.2rem;
+    li {
+      margin-bottom: 0.5rem;
+    }
+  }
+  a {
+    color: var(--ion-color-primary);
+    text-decoration: none;
+  }
+}
+
+.no-border-footer {
+  box-shadow: none !important;
+}
+
+.linea-decorativa {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 4px; /* Grosor de la línea */
+  background-color: #9b7bbc; /* Color de la línea */
+  margin-top: 8px; /* Espacio superior (ajusta según sea necesario) */
+}
+
+ion-item {
+    --background: transparent;
+    --ion-background-color: transparent;
+  }
+
+  ion-list{
+    --background: transparent;
+    --ion-background-color: transparent;
+  }

@@ -60,7 +60,7 @@
               <div class="linea-decorativa"></div>
             </ion-card-header>
             <ion-card-content>
-              <img src="assets/images/Octubre.png" alt="Octubre" />
+              <img src="assets/images/Octubre.png" alt="Octubre" style="display: block; margin-left: auto; margin-right: auto;" />
               <ion-button
                 (click)="navigateToPage('congreso/programa')"
                 expand="block"
@@ -169,14 +169,14 @@
               <div class="linea-decorativa"></div>
             </ion-card-header>
             <ion-card-content>
-              <iframe
-                src="https://www.youtube.com/embed/QgkmGSbMbrk?si=hafo2TLas_XrXO3Z"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                allowfullscreen
-              ></iframe>
+              <div class="iframe-container">
+                <iframe
+                  src="https://www.youtube.com/embed/QgkmGSbMbrk?si=hafo2TLas_XrXO3Z"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allowfullscreen
+                ></iframe>
+              </div>
               <ion-button
                 expand="block"
                 style="--background: #9b7bbc;"

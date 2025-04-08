@@ -1,0 +1,53 @@
+<ion-content class="ion-padding">
+
+  <div class="header-title">
+    <h1>Configuración cookies</h1>
+  </div>
+
+  <div class="cookie-settings">
+    <!-- Cookies técnicas (siempre activas) -->
+    <ion-item lines="none">
+      <ion-label class="ion-text-wrap">
+        <h2>Cookies técnicas</h2>
+        <p>Necesarias para el funcionamiento básico del sitio</p>
+      </ion-label>
+      <ion-toggle slot="end" [checked]="true" disabled></ion-toggle>
+    </ion-item>
+
+    <!-- Cookies analíticas -->
+    <ion-item lines="none">
+      <ion-label class="ion-text-wrap">
+        <h2>Cookies analíticas</h2>
+        <p>Nos ayudan a mejorar el sitio mediante análisis de uso</p>
+      </ion-label>
+      <ion-toggle slot="end" [(ngModel)]="analyticsCookies"></ion-toggle>
+    </ion-item>
+
+    <!-- Cookies de marketing -->
+    <ion-item lines="none">
+      <ion-label class="ion-text-wrap">
+        <h2>Cookies de marketing</h2>
+        <p>Permiten mostrar contenido personalizado y anuncios relevantes</p>
+      </ion-label>
+      <ion-toggle slot="end" [(ngModel)]="marketingCookies"></ion-toggle>
+    </ion-item>
+
+    <!-- Botones de acción -->
+    <div class="action-buttons">
+      <ion-button expand="block" style="--background: #9b7bbc;" (click)="acceptAllCookies()">
+        Aceptar todas
+      </ion-button>
+      <ion-button expand="block" color="medium" (click)="rejectAllCookies()">
+        Rechazar todas
+      </ion-button>
+    </div>
+
+    <!-- Enlace a política de cookies -->
+    <a color="primary" href="/congreso/cookies"><h3>Más información sobre cookies</h3></a>
+  </div>
+
+  <div class="linea-decorativa"></div>
+  <ion-footer class="no-border-footer">
+    <app-pie-pagina></app-pie-pagina>
+  </ion-footer>
+</ion-content>
