@@ -19,6 +19,14 @@ const routes: Routes = [
     path: 'aviso-legal',
     loadChildren: () => import('./components/pages/aviso-legal/aviso-legal.module').then( m => m.AvisoLegalPageModule)
   },
+  {
+    path: 'cookies',
+    loadChildren: () => import('./components/pages/cookies/cookies.module').then( m => m.CookiesPageModule)
+  },
+  {
+    path: 'cookies-config',
+    loadChildren: () => import('./components/pages/cookies-config/cookies-config.module').then( m => m.CookiesConfigPageModule)
+  },
 ];
 @NgModule({
   imports: [

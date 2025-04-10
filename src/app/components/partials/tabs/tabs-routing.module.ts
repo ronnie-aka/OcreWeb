@@ -27,6 +27,14 @@ const routes: Routes = [
         path: 'politica-privacidad',
         loadChildren: () => import('../../pages/politica-privacidad/politica-privacidad.module').then(m => m.PoliticaPrivacidadPageModule)
       },
+      {
+        path: 'cookies',
+        loadChildren: () => import('../../pages/cookies/cookies.module').then(m => m.CookiesPageModule)
+      },
+      {
+        path: 'configuracion-cookies',
+        loadChildren: () => import('../../pages/cookies-config/cookies-config.module').then(m => m.CookiesConfigPageModule)
+      },
     ]
   },
 ];

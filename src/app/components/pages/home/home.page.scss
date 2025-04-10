@@ -202,7 +202,7 @@ p {
 
 //Estilo para última fila
 /* Estilo específico para la última fila */
-ion-row:last-of-type {
+.lastRow {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +211,7 @@ ion-row:last-of-type {
 }
 
 /* Estilo para la tarjeta de la última fila */
-ion-row:last-of-type ion-card {
+.lastRow ion-card {
   width: 50%;
   max-width: 600px; /* Ancho máximo */
   text-align: center;
@@ -220,7 +220,7 @@ ion-row:last-of-type ion-card {
 }
 
 
-ion-row:last-of-type ion-card-title {
+.lastRow ion-card-title {
   margin-top: 1.5em;
   margin-bottom: 1em;
 }
