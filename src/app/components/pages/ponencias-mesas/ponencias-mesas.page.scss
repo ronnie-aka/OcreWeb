@@ -1,0 +1,55 @@
+.main-title {
+  color: #592192;
+  padding: 16px;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-bottom: 2px solid #592192;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+.section-title {
+  color: #592192;
+  padding: 0 16px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.video-scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 16px;
+  gap: 15px;
+  -ms-overflow-style: none; /* Para Internet Explorer y Edge */
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  iframe {
+    flex: 0 0 280px;
+    height: 160px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+//Linea amarilla
+.linea-decorativa {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 4px; /* Grosor de la línea */
+  background-color: #592192; /* Color de la línea */
+  margin-top: 8px; /* Espacio superior (ajusta según sea necesario) */
+}
+
+.no-border-footer {
+  box-shadow: none !important;
+}

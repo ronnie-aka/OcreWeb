@@ -1,8 +1,7 @@
 <ion-content [fullscreen]="true">
-
-    <div class="logo-container">
-      <img src="assets/logo/cartel.jpeg" alt="Logo" class="main-logo" />
-    </div>
+  <div class="logo-container">
+    <img src="assets/logo/cartel.jpeg" alt="Logo" class="main-logo" />
+  </div>
 
   <div class="grid-container">
     <ion-grid>
@@ -44,7 +43,7 @@
               <ion-button
                 (click)="navigateToPage('congreso/info')"
                 expand="block"
-                style="--background: #9b7bbc;"
+                style="--background: #9b7bbc"
               >
                 Más información
               </ion-button>
@@ -60,11 +59,15 @@
               <div class="linea-decorativa"></div>
             </ion-card-header>
             <ion-card-content>
-              <img src="assets/images/Octubre.png" alt="Octubre" style="display: block; margin-left: auto; margin-right: auto;" />
+              <img
+                src="assets/images/Octubre.png"
+                alt="Octubre"
+                style="display: block; margin-left: auto; margin-right: auto"
+              />
               <ion-button
                 (click)="navigateToPage('congreso/programa')"
                 expand="block"
-                style="--background: #9b7bbc;"
+                style="--background: #9b7bbc"
               >
                 Consulta toda la programación
               </ion-button>
@@ -88,45 +91,38 @@
 
                 <p>
                   <strong>COMUNICACIONES BREVES:</strong><br />
-                  Antonio Iván Rodríguez López, Elena González Párraga y
-                  Ramón Rodríguez Galán.
+                  Antonio Iván Rodríguez López, Elena González Párraga y Ramón
+                  Rodríguez Galán.
                 </p>
 
                 <p>
                   <strong>1ª MESA DE DEBATE:</strong><br />
-                  Ramón Rodríguez Galán,
-                  Andrés Rivera,
-                  Bianca Thoilliez y
+                  Ramón Rodríguez Galán, Andrés Rivera, Bianca Thoilliez y
                   Belinda Haro.
                 </p>
 
                 <p>
                   <strong>2ª MESA DE DEBATE:</strong><br />
-                  David Cerdá,
-                  Carlos Javier González Serrano,
-                  Emilio Canales y
+                  David Cerdá, Carlos Javier González Serrano, Emilio Canales y
                   Olga García.
                 </p>
 
                 <p>
                   <strong>3ª MESA DE DEBATE:</strong><br />
-                  Javier Mestre,
-                  Antonio Iván Rodríguez López,
-                  Elena González Párraga y
-                  Silvia Toscano.
+                  Javier Mestre, Antonio Iván Rodríguez López, Elena González
+                  Párraga y Silvia Toscano.
                 </p>
 
                 <p>
                   <strong>MODERADORES:</strong><br />
-                  Miguel Ángel Tirado Ramos,
-                  Andrés Rivera y
-                  Paco Benítez Velarde.
+                  Miguel Ángel Tirado Ramos, Andrés Rivera y Paco Benítez
+                  Velarde.
                 </p>
               </div>
               <ion-button
                 (click)="navigateToPage('congreso/ponentes')"
                 expand="block"
-                style="--background: #9b7bbc;"
+                style="--background: #9b7bbc"
               >
                 Ver a los ponentes
               </ion-button>
@@ -152,7 +148,7 @@
               </div>
               <ion-button
                 slot="end"
-                style="--background: #9b7bbc;"
+                style="--background: #9b7bbc"
                 href="https://maps.app.goo.gl/MYcxKfbKdnN6z33J7?g_st=ac"
               >
                 Abrir ubicación
@@ -178,8 +174,9 @@
                 ></iframe>
               </div>
               <ion-button
+                (click)="navigateToPage('congreso/ponencias-y-mesas-anteriores')"
                 expand="block"
-                style="--background: #9b7bbc;"
+                style="--background: #9b7bbc"
               >
                 Ver todas las mesas
               </ion-button>
@@ -196,10 +193,7 @@
             </ion-card-header>
             <ion-card-content>
               <p>Varios recortes prensa o texto</p>
-              <ion-button
-                expand="block"
-                style="--background: #9b7bbc;"
-              >
+              <ion-button expand="block" style="--background: #9b7bbc">
                 Ver más artículos de prensa
               </ion-button>
             </ion-card-content>
@@ -210,22 +204,18 @@
       <ion-row class="lastRow">
         <ion-card>
           <ion-card-title>¿Te gustaría participar?</ion-card-title>
-          <ion-button
-            expand="block"
-            style="--background: #9b7bbc;"
-          >
+          <ion-button expand="block" style="--background: #9b7bbc">
             ¡Inscríbete!
           </ion-button>
         </ion-card>
       </ion-row>
 
       <ion-row class="lastRow">
-        <ion-card >
-          <ion-card-title>¿Te ha gustado el proyecto y quieres ayudarnos?</ion-card-title>
-          <ion-button
-            expand="block"
-            style="--background: #9b7bbc;"
+        <ion-card>
+          <ion-card-title
+            >¿Te ha gustado el proyecto y quieres ayudarnos?</ion-card-title
           >
+          <ion-button expand="block" style="--background: #9b7bbc">
             Realiza una donación
           </ion-button>
         </ion-card>

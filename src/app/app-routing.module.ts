@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'cookies-config',
     loadChildren: () => import('./components/pages/cookies-config/cookies-config.module').then( m => m.CookiesConfigPageModule)
   },
+  {
+    path: 'ponencias-mesas',
+    loadChildren: () => import('./components/pages/ponencias-mesas/ponencias-mesas.module').then( m => m.PonenciasMesasPageModule)
+  },
 ];
 @NgModule({
   imports: [

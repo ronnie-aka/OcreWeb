@@ -35,6 +35,10 @@ const routes: Routes = [
         path: 'configuracion-cookies',
         loadChildren: () => import('../../pages/cookies-config/cookies-config.module').then(m => m.CookiesConfigPageModule)
       },
+      {
+        path: 'ponencias-y-mesas-anteriores',
+        loadChildren: () => import('../../pages/ponencias-mesas/ponencias-mesas.module').then(m => m.PonenciasMesasPageModule)
+      },
     ]
   },
 ];
