@@ -32,15 +32,25 @@
   transition: transform 0.3s ease; /* Efecto de transición */
 }
 
+.icon-bluesky{
+  height: 40px;
+}
+
 @media (max-width: 768px) {
   .logo-redes {
     width: 40px;
+  }
+  .icon-bluesky{
+    height: 40px;
   }
 }
 
 @media (max-width: 480px) {
   .logo-redes {
     width: 35px;
+  }
+  .icon-bluesky{
+    height: 35px;
   }
 }
 
