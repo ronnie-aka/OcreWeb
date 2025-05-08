@@ -39,6 +39,10 @@ const routes: Routes = [
         path: 'ponencias-y-mesas-anteriores',
         loadChildren: () => import('../../pages/ponencias-mesas/ponencias-mesas.module').then(m => m.PonenciasMesasPageModule)
       },
+      {
+        path: 'pre-pago',
+        loadChildren: () => import('../../pages/pre-pago/pre-pago.module').then(m => m.PrePagoPageModule)
+      },
     ]
   },
 ];

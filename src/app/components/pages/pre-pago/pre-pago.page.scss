@@ -1,0 +1,87 @@
+h1 {
+  font-weight: bold;
+  font-size: 2rem; /* Tamaño base */
+  text-align: center;
+  margin-bottom: 3%;
+  margin-top: 3%;
+  color: #592192;
+}
+
+p{
+    padding: 20px;
+}
+
+/* Subtítulos */
+h3 {
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  color: #020202;
+  text-align: center;
+}
+
+/* Párrafos */
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Imágenes */
+img {
+  display: block;
+  margin: 1rem auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Imágenes cuadradas */
+img.cuadrado {
+  max-width: 40%; /* Ajustable según lo que visualmente se vea mejor */
+}
+
+/* Imágenes rectangulares (más anchas) */
+img.rectangulo {
+  max-width: 60%;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  img.cuadrado {
+    max-width: 60%;
+  }
+  img.rectangulo {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  img.cuadrado {
+    max-width: 80%;
+  }
+  img.rectangulo {
+    max-width: 90%;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+}
+
+ion-button {
+  width: 30%;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-top: 3%;
+}
+
+.linea-decorativa {
+  width: 100%; /* Ancho completo del contenedor */
+  height: 4px; /* Grosor de la línea */
+  background-color: #9b7bbc; /* Color de la línea */
+  margin-top: 8px; /* Espacio superior (ajusta según sea necesario) */
+}

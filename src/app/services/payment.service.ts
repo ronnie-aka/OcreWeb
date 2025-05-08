@@ -16,7 +16,7 @@ export class PaymentService {
     return this.http.post(this.backendUrl, {
       amount,
       orderId,
-      urlOk: 'https://iv-congreso-ocre.web.app/congreso/programa',
+      urlOk: 'https://docs.google.com/forms/d/11qMf7QhL7Kd8FhNIoj-NUPSZIuLPUTfBO2RfuVGuync/preview',
       urlKo: 'https://iv-congreso-ocre.web.app/congreso/ponencias-y-mesas-anteriores'
     });
   }

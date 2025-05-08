@@ -1,0 +1,63 @@
+<ion-content [fullscreen]="true">
+  <h1> Inscripción IV congreso </h1>
+
+  <h3>Antes de inscribirte, ten en cuenta lo siguiente:</h3>
+
+  <p>
+    Al hacer clic en "Inscribirte", serás redirigido a la pasarela de pago. Allí
+    deberás introducir el número de tu tarjeta, la fecha de caducidad y el CVV.
+  </p>
+
+  <img
+    src="assets/images/pasarelaPago.png"
+    alt="Formulario de tarjeta de pago"
+    class="cuadrado"
+  />
+
+  <p>
+    Una vez realizado el pago correctamente, aparecerá la siguiente pantalla.
+    Haz clic en el icono de la impresora para descargar el justificante del
+    pago. Este documento será necesario para completar el formulario de
+    inscripción al congreso.
+  </p>
+
+  <img
+    src="assets/images/pagoRealizado.png"
+    alt="Pantalla de confirmación de pago"
+    class="rectangulo"
+  />
+
+  <p>
+    Al continuar, accederás al formulario de inscripción. En el apartado
+    "Adjuntar justificante de pago", haz clic en "Añadir archivo". Se abrirá una
+    ventana desde la cual podrás seleccionar el justificante descargado
+    anteriormente.
+  </p>
+
+  <img
+    src="assets/images/adjuntarPago.png"
+    alt="Pantalla para adjuntar archivo"
+    class="rectangulo"
+  />
+  <img
+    src="assets/images/subirArchivo.png"
+    alt="Ventana de selección de archivo"
+    class="cuadrado"
+  />
+
+  <h3>¡Eso es todo! ¡Disfruta del congreso!</h3>
+    <ion-button
+      [disabled]="loading"
+      expand="block"
+      style="--background: #9b7bbc"
+      (click)="iniciarInscripcion()"
+    >
+      <ion-spinner *ngIf="loading"></ion-spinner>
+      <span *ngIf="!loading">¡Inscríbete!</span>
+    </ion-button>
+
+    <div class="linea-decorativa"></div>
+  <ion-footer class="no-border-footer"
+    ><app-pie-pagina></app-pie-pagina
+  ></ion-footer>
+</ion-content>

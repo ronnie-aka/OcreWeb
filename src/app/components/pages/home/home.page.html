@@ -208,7 +208,7 @@
             [disabled]="loading"
             expand="block"
             style="--background: #9b7bbc"
-            (click)="iniciarInscripcion()"
+            (click)="navigateToPage('congreso/pre-pago')"
           >
             <ion-spinner *ngIf="loading"></ion-spinner>
             <span *ngIf="!loading">¡Inscríbete!</span>
