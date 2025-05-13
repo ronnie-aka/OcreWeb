@@ -1,5 +1,5 @@
 <ion-content [fullscreen]="true">
-  <h1> Inscripción IV congreso </h1>
+  <h1>Inscripción IV congreso</h1>
 
   <h3>Antes de inscribirte, ten en cuenta lo siguiente:</h3>
 
@@ -16,9 +16,10 @@
 
   <p>
     Una vez realizado el pago correctamente, aparecerá la siguiente pantalla.
-    Haz clic en el icono de la impresora para descargar el justificante del
-    pago. Este documento será necesario para completar el formulario de
-    inscripción al congreso.
+    Haz clic en el icono de la impresora para descargar y guardar el
+    justificante del pago, pues este documento será necesario para completar el
+    formulario de inscripción al congreso, que te saldrá cuando le des a
+    "Continuar" de esta misma pantalla.
   </p>
 
   <img
@@ -28,10 +29,11 @@
   />
 
   <p>
-    Al continuar, accederás al formulario de inscripción. En el apartado
-    "Adjuntar justificante de pago", haz clic en "Añadir archivo". Se abrirá una
-    ventana desde la cual podrás seleccionar el justificante descargado
-    anteriormente.
+    Al continuar, e introducir tu email, accederás al formulario de inscripción.
+    Cuando rellenes todos tus datos y llegues al final, en el apartado "Adjuntar
+    justificante de pago", haz clic en "Añadir archivo". Se abrirá una ventana
+    desde la cual podrás seleccionar tu justificante descargado anteriormente,
+    terminar de rellenar el formulario, enviar y habrás acabado.
   </p>
 
   <img
@@ -45,18 +47,42 @@
     class="cuadrado"
   />
 
-  <h3>¡Eso es todo! ¡Disfruta del congreso!</h3>
-    <ion-button
-      [disabled]="loading"
-      expand="block"
-      style="--background: #9b7bbc"
-      (click)="iniciarInscripcion()"
-    >
-      <ion-spinner *ngIf="loading"></ion-spinner>
-      <span *ngIf="!loading">¡Inscríbete!</span>
-    </ion-button>
+  <p>
+    Al rellenar el formulario verás que a los asociados de OCRE y afiliados de
+    APIA les vamos a descontar los 20€ de la inscripción en la siguiente cuota
+    anual; así que, si aún no eres asociado y quieres aprovecharlo, te indicamos
+    los enlaces para que puedas realizarlo antes del pago:
 
-    <div class="linea-decorativa"></div>
+        <p>
+          - Para asociarte a OCRE:
+          <a
+            href="https://docs.google.com/forms/d/1KxuyccljVfmFmkZayiQcBs_oSxsnJETd-gjY6G-Tg0I/viewform?chromeless=1&edit_requested=true&pli=1"
+            class="enlace-OCRE"
+            >Formulari Associació OCRE - Formulario Asociación OCRE</a
+          >
+        </p>
+
+        <p>
+          - Para asociarte a APIA:
+          <a
+            href="https://aso-apia.org/que-es-apia/#asociate"
+            class="enlace-APIAN"
+            >Qué es APIA – APIA</a
+          >
+        </p>
+
+  <h3>¡Eso es todo! ¡Disfruta del congreso!</h3>
+  <ion-button
+    [disabled]="loading"
+    expand="block"
+    style="--background: #9b7bbc"
+    (click)="iniciarInscripcion()"
+  >
+    <ion-spinner *ngIf="loading"></ion-spinner>
+    <span *ngIf="!loading">¡Inscríbete!</span>
+  </ion-button>
+
+  <div class="linea-decorativa"></div>
   <ion-footer class="no-border-footer"
     ><app-pie-pagina></app-pie-pagina
   ></ion-footer>

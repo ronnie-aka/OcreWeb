@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'pre-pago',
     loadChildren: () => import('./components/pages/pre-pago/pre-pago.module').then( m => m.PrePagoPageModule)
   },
+  {
+    path: 'modal',
+    loadChildren: () => import('./components/partials/modal/modal.module').then( m => m.ModalPageModule)
+  },
 ];
 @NgModule({
   imports: [

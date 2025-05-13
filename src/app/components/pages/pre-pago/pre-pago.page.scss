@@ -71,12 +71,15 @@ img.rectangulo {
 }
 
 ion-button {
-  width: 30%;
+  width: auto; /* Cambia de 30% a auto para que se ajuste al contenido */
+  min-width: 30%; /* Mantiene un ancho mínimo si lo prefieres */
   margin: 0 auto;
   display: block;
   text-align: center;
   font-size: 1.5rem;
-  padding-top: 3%;
+  padding: 10px 20px; /* Añade padding horizontal para mejor espaciado */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: visible; /* Asegura que el texto no se corte */
 }
 
 .linea-decorativa {
@@ -84,4 +87,22 @@ ion-button {
   height: 4px; /* Grosor de la línea */
   background-color: #9b7bbc; /* Color de la línea */
   margin-top: 8px; /* Espacio superior (ajusta según sea necesario) */
+}
+
+ion-footer{
+  padding-top: 20px;
+}
+
+ion-item{
+  --background: #fcedda;
+  background: #fcedda;
+
+  box-shadow: none;
+}
+
+ion-list{
+  --background: #fcedda;
+  background: #fcedda;
+
+  text-align: center;
 }
