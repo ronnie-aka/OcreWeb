@@ -1,0 +1,93 @@
+/*Estilos letra */
+ion-card-title {
+    font-weight: bold;
+    font-size: 2rem; /* Tamaño base */
+    text-align: center;
+    margin-bottom: 3%;
+    margin-top: 3%;
+    color: #592192
+  }
+  
+  p{
+    margin: 5%;
+  }
+  
+  
+  /* Estilos para el ion-header */
+  ion-header {
+    background-color: transparent;
+    box-shadow: none;
+    position: relative; /* Asegúrate de que no sea "sticky" o "fixed" */
+  }
+  
+  /* Estilos para el video-container */
+  .video-container {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 560px; /* Tamaño máximo (ancho original del iframe) */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    aspect-ratio: 16 / 9; /* Relación de aspecto 16:9 */
+  }
+  
+  /* Estilos para el iframe */
+  iframe {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 100%; /* Ocupa todo el alto del contenedor */
+  }
+  
+  /* Estilos para el ion-content */
+  ion-content {
+    --padding-top: 20px; /* Espacio superior (opcional) */
+    --padding-bottom: 20px; /* Espacio inferior (opcional) */
+  }
+  
+  /* Estilos para los párrafos */
+  p {
+    margin-bottom: 1.5em; /* Espacio entre párrafos */
+    line-height: 1.6; /* Interlineado para mejor legibilidad */
+  }
+  
+  /* Estilos para el texto en cursiva */
+  em {
+    font-style: italic; /* Texto en cursiva para énfasis */
+  }
+  
+  
+  /* Estilo para webs anteriores*/
+  .congresos-anteriores {
+    text-align: center; /* Centra todo el contenido dentro del ion-card */
+  }
+  
+  .titulo-congreso {
+    font-weight: bold; /* Aplica negrita */
+    color: #592192;
+    margin: 16px 0; /* Añade un margen superior e inferior para mejor espaciado */
+  }
+  
+  .enlace-congreso {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    color: rgb(46, 44, 44); /* Hereda el color del texto (o puedes definir uno, ej: #3880ff) */
+    display: block; /* Hace que el enlace ocupe toda la línea (mejor para centrado) */
+    margin: 8px 0; /* Espaciado entre enlaces */
+  }
+  
+  /* Opcional: Estilo para hover (cuando el mouse pasa sobre el enlace) */
+  .enlace-congreso:hover {
+    color: #3880ff; /* Cambia el color al pasar el cursor */
+  }
+  
+  @media (max-width: 768px) {
+    .titulo-congreso {
+      font-size: 1,3em;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .titulo-congreso {
+      font-size: 1,3em;
+    }
+  }
+  
+  p{
+    font-size: 1.1em
+  }
+  
