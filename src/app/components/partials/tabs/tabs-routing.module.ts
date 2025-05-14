@@ -47,6 +47,10 @@ const routes: Routes = [
         path: 'prensa',
         loadChildren: () => import('../../pages/prensa/prensa.module').then(m => m.PrensaPageModule)
       },
+      {
+        path: 'error-pago',
+        loadChildren: () => import('../../partials/error-pago/error-pago.module').then(m => m.ErrorPagoPageModule)
+      },
     ]
   },
 ];

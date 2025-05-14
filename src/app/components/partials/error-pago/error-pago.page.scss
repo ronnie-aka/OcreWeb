@@ -1,13 +1,74 @@
 .error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  padding-top: 50%;
+  height: 100%;
+}
 
-  ion-icon {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.error-img-container {
+  padding-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.error-img {
+  max-width: 80%;
+  height: auto;
+  object-fit: contain;
+}
+
+.warning-icon {
+  color: #9b7bbc;
+  margin: 15px 0;
+  width: 5rem !important; /* Ionic usa width/height para iconos */
+  height: 5rem !important;
+}
+
+.error-title {
+  color: #9b7bbc;
+  font-size: 1.8rem; /* Tamaño escalable */
+  margin-bottom: 15px;
+}
+
+.error-message {
+  max-width: 90%;
+  margin: 0 auto 20px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.buttons-container {
+  width: 90%;
+  max-width: 400px; /* Limita el ancho máximo de los botones */
+}
+
+.custom-button {
+  --background: #9b7bbc;
+  margin: 10px 0;
+  max-width: 100%;
+}
+
+/* Media queries para hacer los elementos escalables */
+@media (min-width: 768px) {
+  .warning-icon {
+    width: 5rem !important;
+    height: 5rem !important;
   }
 
-  h2 {
-    color: var(--ion-color-danger);
+  .error-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+
+  .error-message {
+    font-size: 1.1rem;
+    max-width: 80%;
+  }
+
+  .buttons-container {
+    width: 70%;
   }
 }

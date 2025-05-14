@@ -1,17 +1,37 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Error en el pago</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content class="ion-padding">
   <div class="error-container">
-    <ion-icon name="warning" color="danger" size="large"></ion-icon>
-    <h2>¡Algo salió mal!</h2>
-    <p>{{ errorMessage }}</p>
+    <div class="error-img-container">
+      <img src="assets/images/error.png" alt="Error" class="error-img" />
+    </div>
+    
+    <ion-icon name="warning" class="warning-icon" size="large"></ion-icon>
+    <h2 class="error-title">¡Algo salió mal!</h2>
 
-    <ion-button expand="block" routerLink="/pre-pago" routerDirection="back">
-      Reintentar pago
-    </ion-button>
+    <p class="error-message">
+      Si quieres, vuelve a intentarlo y en caso de que tengas problemas,
+      recuerda que puedes contactar con nosotros en
+      <strong>(associacio.ocre&#64;gmail.com)</strong>, explicarnos lo que te ha sucedido y lo
+      resolveremos.
+    </p>
+
+    <div class="buttons-container">
+      <ion-button
+        [disabled]="loading"
+        expand="block"
+        class="custom-button"
+        (click)="iniciarInscripcion()"
+      >
+        <ion-spinner *ngIf="loading"></ion-spinner>
+        <span *ngIf="!loading">Intentar de nuevo</span>
+      </ion-button>
+
+      <ion-button
+        expand="block"
+        class="custom-button"
+        (click)="navigateToPage('congreso/home')"
+      >
+        Volver a la página de incio
+      </ion-button>
+    </div>
   </div>
 </ion-content>
