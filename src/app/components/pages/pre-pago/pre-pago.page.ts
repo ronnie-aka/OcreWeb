@@ -9,6 +9,8 @@ import { PaymentService } from 'src/app/services/payment.service';
 })
 export class PrePagoPage {
   loading = false;
+  showErrorModal = false; // Nueva propiedad para controlar el modal
+  errorMessage = ''; // Mensaje dinámico
 
   constructor(private paymentService: PaymentService) {}
 
@@ -29,7 +31,6 @@ export class PrePagoPage {
       );
     } catch (error) {
       console.error('Error en el pago:', error);
-      this.showErrorAlert();
     } finally {
       this.loading = false;
     }
@@ -63,13 +64,4 @@ export class PrePagoPage {
     form.submit();
   }
 
-  private async showErrorAlert(): Promise<void> {
-    const alert = document.createElement('ion-alert');
-    alert.header = 'Error en el pago';
-    alert.message =
-      'No se pudo iniciar el proceso de pago. Por favor, inténtalo de nuevo.';
-    alert.buttons = ['OK'];
-    document.body.appendChild(alert);
-    await alert.present();
-  }
 }

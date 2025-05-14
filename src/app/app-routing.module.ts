@@ -36,9 +36,14 @@ const routes: Routes = [
     loadChildren: () => import('./components/pages/pre-pago/pre-pago.module').then( m => m.PrePagoPageModule)
   },
   {
-    path: 'modal',
-    loadChildren: () => import('./components/partials/modal/modal.module').then( m => m.ModalPageModule)
+    path: 'prensa',
+    loadChildren: () => import('./components/pages/prensa/prensa.module').then( m => m.PrensaPageModule)
   },
+  {
+    path: 'error-pago',
+    loadChildren: () => import('./components/partials/error-pago/error-pago.module').then( m => m.ErrorPagoPageModule)
+  },
+
 ];
 @NgModule({
   imports: [
