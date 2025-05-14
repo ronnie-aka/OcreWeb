@@ -43,6 +43,10 @@ const routes: Routes = [
         path: 'pre-pago',
         loadChildren: () => import('../../pages/pre-pago/pre-pago.module').then(m => m.PrePagoPageModule)
       },
+      {
+        path: 'prensa',
+        loadChildren: () => import('../../pages/prensa/prensa.module').then(m => m.PrensaPageModule)
+      },
     ]
   },
 ];

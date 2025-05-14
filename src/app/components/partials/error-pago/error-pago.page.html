@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Error en el pago</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="error-container">
+    <ion-icon name="warning" color="danger" size="large"></ion-icon>
+    <h2>¡Algo salió mal!</h2>
+    <p>{{ errorMessage }}</p>
+
+    <ion-button expand="block" routerLink="/pre-pago" routerDirection="back">
+      Reintentar pago
+    </ion-button>
+  </div>
+</ion-content>
