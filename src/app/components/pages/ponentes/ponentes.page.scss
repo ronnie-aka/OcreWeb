@@ -203,3 +203,17 @@ ion-col[size="12"] ion-card {
     font-size: 0.8rem;
   }
 }
+
+
+.video-container {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 560px; /* Tamaño máximo (ancho original del iframe) */
+  margin: 0 auto; /* Centra el contenedor horizontalmente */
+  aspect-ratio: 16 / 9; /* Relación de aspecto 16:9 */
+  padding-top: 10px;
+}
+
+iframe {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 100%; /* Ocupa todo el alto del contenedor */
+}
