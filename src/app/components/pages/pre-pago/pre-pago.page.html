@@ -1,13 +1,13 @@
 <ion-content [fullscreen]="true">
   <h1>Inscripción IV congreso</h1>
 
-  <h3>Antes de inscribirte, ten en cuenta lo siguiente:</h3>
+  <h3><strong>Antes de inscribirte, ten en cuenta lo siguiente:</strong> </h3>
 
   <p>
-    Si sigues las indicaciones siguientes, seguramente, no tendrás ningún
-    problema, pero si fuera así no dudes en contactar con nosotros
-    (associacio.ocre&#64;gmail.com), explicarnos lo que te ha sucedido y lo
-    resolveremos.
+    <strong>Si sigues las indicaciones siguientes, seguramente, no tendrás ningún
+      problema, pero si fuera así no dudes en contactar con nosotros
+      (associacio.ocre&#64;gmail.com), explicarnos lo que te ha sucedido y lo
+      resolveremos.</strong>
   </p>
 
   <p>
@@ -15,44 +15,30 @@
     deberás introducir el número de tu tarjeta, la fecha de caducidad y el CVV.
   </p>
 
-  <img
-    src="assets/images/pasarelaPago.png"
-    alt="Formulario de tarjeta de pago"
-    class="cuadrado"
-  />
+  <img src="assets/images/pasarelaPago.png" alt="Formulario de tarjeta de pago" class="cuadrado" />
 
   <p>
     Una vez realizado el pago correctamente, aparecerá la siguiente pantalla.
     Haz clic en el icono de la impresora para descargar y guardar el
     justificante del pago, pues este documento será necesario para completar el
     formulario de inscripción al congreso, que te saldrá cuando le des a
-    "Continuar" de esta misma pantalla.
+    "Continuar" de esta misma pantalla. También nos serviría una captura de esta pantalla, si no quieres descargar el
+    justificante o si presentas algún problema con la descargar.
   </p>
 
-  <img
-    src="assets/images/pagoRealizado.png"
-    alt="Pantalla de confirmación de pago"
-    class="rectangulo"
-  />
+  <img src="assets/images/pagoRealizado.png" alt="Pantalla de confirmación de pago" class="rectangulo" />
 
   <p>
     Al continuar, e introducir tu email, accederás al formulario de inscripción.
     Cuando rellenes todos tus datos y llegues al final, en el apartado "Adjuntar
     justificante de pago", haz clic en "Añadir archivo". Se abrirá una ventana
-    desde la cual podrás seleccionar tu justificante descargado anteriormente,
+    desde la cual podrás seleccionar tu justificante descargado anteriormente o la captura de pantalla en caso de que
+    así lo hayas elegido,
     terminar de rellenar el formulario, enviar y habrás acabado.
   </p>
 
-  <img
-    src="assets/images/adjuntarPago.png"
-    alt="Pantalla para adjuntar archivo"
-    class="rectangulo"
-  />
-  <img
-    src="assets/images/subirArchivo.png"
-    alt="Ventana de selección de archivo"
-    class="cuadrado"
-  />
+  <img src="assets/images/adjuntarPago.png" alt="Pantalla para adjuntar archivo" class="rectangulo" />
+  <img src="assets/images/subirArchivo.png" alt="Ventana de selección de archivo" class="cuadrado" />
 
   <p>
     Al rellenar el formulario verás que a los asociados de OCRE y afiliados de
@@ -63,33 +49,21 @@
 
   <p>
     - Para asociarte a OCRE:
-    <a
-      href="https://docs.google.com/forms/d/1KxuyccljVfmFmkZayiQcBs_oSxsnJETd-gjY6G-Tg0I/viewform?chromeless=1&edit_requested=true&pli=1"
-      class="enlace-OCRE"
-      >Formulari Associació OCRE - Formulario Asociación OCRE</a
-    >
+    <a href="https://docs.google.com/forms/d/1KxuyccljVfmFmkZayiQcBs_oSxsnJETd-gjY6G-Tg0I/viewform?chromeless=1&edit_requested=true&pli=1"
+      class="enlace-OCRE">Formulari Associació OCRE - Formulario Asociación OCRE</a>
   </p>
 
   <p>
     - Para asociarte a APIA:
-    <a href="https://aso-apia.org/que-es-apia/#asociate" class="enlace-APIAN"
-      >Qué es APIA – APIA</a
-    >
+    <a href="https://aso-apia.org/que-es-apia/#asociate" class="enlace-APIAN">Qué es APIA – APIA</a>
   </p>
 
   <h3>¡Eso es todo! ¡Disfruta del congreso!</h3>
-  <ion-button
-    [disabled]="loading"
-    expand="block"
-    style="--background: #9b7bbc"
-    (click)="iniciarInscripcion()"
-  >
+  <ion-button [disabled]="loading" expand="block" style="--background: #9b7bbc" (click)="iniciarInscripcion()">
     <ion-spinner *ngIf="loading"></ion-spinner>
     <span *ngIf="!loading">¡Inscríbete!</span>
   </ion-button>
 
   <div class="linea-decorativa"></div>
-  <ion-footer class="no-border-footer"
-    ><app-pie-pagina></app-pie-pagina
-  ></ion-footer>
+  <ion-footer class="no-border-footer"><app-pie-pagina></app-pie-pagina></ion-footer>
 </ion-content>
