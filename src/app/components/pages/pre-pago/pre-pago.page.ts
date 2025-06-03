@@ -16,7 +16,7 @@ export class PrePagoPage {
 
   async iniciarInscripcion() {
     this.loading = true;
-    const amount = 0.05; // 10€ (se convertirá a 1000 céntimos en el Worker)
+    const amount = 20; // 10€ (se convertirá a 1000 céntimos en el Worker)
     const orderId = this.generateOrderId();
 
     try {
